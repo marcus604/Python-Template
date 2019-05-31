@@ -19,6 +19,11 @@ MODE_VERBOSE = False
 
 def logLaunch():
     logger.info("Starting {}".center(40, "=").format(PROGRAM_NAME))
+    if MODE_READ_ONLY:
+        logger.info("Read Only Mode".center(40, "="))
+    if MODE_VERBOSE:
+        logger.info("Verbose Logging".center(40, "="))
+
     
 
 
