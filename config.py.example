@@ -1,0 +1,10 @@
+class config:
+     URL = ""
+     USER = ""
+     PASSWORD = ""
+
+
+
+
+
+
