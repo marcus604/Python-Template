@@ -1,12 +1,10 @@
+#Libraries
+from configparser import ConfigParser
+import sys
+
 #Custom
 from Classes import *
-from config import *
-from log import getLogger
-
-#Libraries
-from log import logging
-
-import sys
+from log import getLogger, logging
 
 ##########CHANGE ME#################
 PROGRAM_NAME = "NAME HERE"
@@ -34,6 +32,13 @@ def main():
     #Log startup
     logLaunch()
 
+    #Get config file
+    config = ConfigParser()
+
+    config.read("config.ini")
+    userConfig = config["USER_PREFERENCES"]
+
+    API_KEY = userConfig["API_KEY"]
     
     logger.info("Finished {}".center(40, "=").format(PROGRAM_NAME))
 

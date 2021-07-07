@@ -15,7 +15,7 @@ def getConsoleHandler():
 #Rotates log every night
 def getFileHandler(logPath):
 	os.makedirs(os.path.dirname(logPath), exist_ok=True)
-	file_handler = TimedRotatingFileHandler(logPath, when='midnight')
+	file_handler = TimedRotatingFileHandler(logPath, when='midnight', encoding='utf-8')
 	file_handler.setFormatter(FORMATTER)
 	return file_handler
 

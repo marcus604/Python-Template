@@ -1,26 +1,11 @@
 ######Custom############
-config.py
-
+config.ini
 
 #macOS
 .DS_Store
 
 #VSCode
 .vscode/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ############PREMADE################
 # Byte-compiled / optimized / DLL files
